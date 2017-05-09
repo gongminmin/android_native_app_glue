@@ -420,6 +420,7 @@ static void onInputQueueDestroyed(ANativeActivity* activity, AInputQueue* queue)
     android_app_set_input((struct android_app*)activity->instance, NULL);
 }
 
+__attribute__((visibility("default")))
 void ANativeActivity_onCreate(ANativeActivity* activity,
         void* savedState, size_t savedStateSize) {
     LOGV("Creating: %p\n", activity);
