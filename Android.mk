@@ -5,6 +5,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE:= android_native_app_glue
 LOCAL_SRC_FILES:= android_native_app_glue.c
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)
-LOCAL_EXPORT_LDLIBS := -llog
+LOCAL_EXPORT_LDLIBS := -llog -landroid
 
 include $(BUILD_STATIC_LIBRARY)
