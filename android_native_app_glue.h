@@ -337,9 +337,7 @@ void android_app_post_exec_cmd(struct android_app* android_app, int8_t cmd);
  * does this for us.
  */
 __attribute__((
-    deprecated("Calls to app_dummy are no longer necessary. Use "
-               "`LOCAL_WHOLE_STATIC_LIBRARIES := android_native_app_glue` and "
-               "remove the call. See "
+    deprecated("Calls to app_dummy are no longer necessary. See "
                "https://github.com/android-ndk/ndk/issues/381."))) void
 app_dummy();
 
