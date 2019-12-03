@@ -12,11 +12,9 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *
  */
 
-#ifndef _ANDROID_NATIVE_APP_GLUE_H
-#define _ANDROID_NATIVE_APP_GLUE_H
+#pragma once
 
 #include <poll.h>
 #include <pthread.h>
@@ -350,5 +348,3 @@ extern void android_main(struct android_app* app);
 #ifdef __cplusplus
 }
 #endif
-
-#endif /* _ANDROID_NATIVE_APP_GLUE_H */
